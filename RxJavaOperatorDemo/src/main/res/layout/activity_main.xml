@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.rxjava.jun.rxjavaopdemo.activity.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_old"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/tv_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_old"
+                    android:layout_weight="1"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll"
+                android:text="你愿意就这样活着么？" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/bt_Create"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="create:操作符是所有创建型操作符的“根”" />
+
+            <Button
+                android:id="@+id/bt_From"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="from:把其他类型的对象和数据类型转化成Observable" />
+
+            <Button
+                android:id="@+id/bt_Map"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="map:(一对一变换)中间过程参数的变换,打印出一组学生的名字" />
+
+            <Button
+                android:id="@+id/bt_FlatMap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="flatmap:(多对多变换)更好的变换，打印出每个学生的每一项课程" />
+
+            <Button
+                android:id="@+id/bt_PublishSubject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="publishSubject:允许我们在任意时刻手动调用onNext(),onError(),onCompleted来触发事件" />
+
+            <Button
+                android:id="@+id/bt_Defer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="defer:直到有订阅者订阅时，才创建Observable并执行" />
+
+            <Button
+                android:id="@+id/bt_ThrottleFirst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="throttleFirst:防止View被重复点击" />
+
+            <Button
+                android:id="@+id/bt_ifgo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="RxBindings:checkBox被勾选后才执行下一步" />
+
+            <Button
+                android:id="@+id/bt_Buffer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="RxBindings:点击按钮达到3次数后，会出现妙不可言的事情哦" />
+
+            <Button
+                android:id="@+id/bt_Buffer2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="buffer:指定两两数据发送，并跳过之后的一个数据" />
+
+            <Button
+                android:id="@+id/bt_Zip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="zip:合并来源不同的数据，并同时显示" />
+
+            <Button
+                android:id="@+id/bt_Merge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="merge:将多个Obsevables的输出序列变为一个" />
+
+            <Button
+                android:id="@+id/bt_Interval_on"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="interval:循环开启" />
+
+            <Button
+                android:id="@+id/bt_Interval_off"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="interval:循环关闭" />
+
+            <Button
+                android:id="@+id/bt_Range"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="range:创建一组在从n开始，个数为m的连续数字" />
+
+            <Button
+                android:id="@+id/bt_Repeat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="repeat:对某一个Observable，重复产生多次结果" />
+
+            <Button
+                android:id="@+id/bt_Scan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="scan:把序列的数据运用函数后的结果当做下个数据用该函数的参数" />
+
+            <Button
+                android:id="@+id/bt_Distinct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="distinct:我可是可以去掉重复的数据呢" />
+
+            <Button
+                android:id="@+id/bt_Filter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="filter:我具有终极过滤的天赋(保留满足过滤条件大神们)" />
+
+            <Button
+                android:id="@+id/bt_Skip_Take"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="skip、take:将源发射的数据过滤掉前n项，而Take操作符则只取前n项" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
