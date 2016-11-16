@@ -24,3 +24,20 @@
     
     
   害羞(✿◡‿◡)~
+  
+  
+# 另外，这些是Rx支持的利用库
+   
+  https://github.com/ReactiveX/RxJava ——RxJava核心库
+
+  https://github.com/ReactiveX/RxAndroid ——RxJava在Android中使用的扩展库
+
+  https://github.com/JakeWharton/RxBinding ——Android控件对RxJava的支持库
+
+  https://github.com/f2prateek/rx-preferences ——使SharedPreferences支持 RxJava
+
+  https://github.com/trello/RxLifecycle ——帮助RxJava在Android中生命周期的控制，避免内存溢出等问题
+
+  https://github.com/square/retrofit ——Retrofit
+
+  https://github.com/pushtorefresh/storio ——数据库对RxJava的支持
