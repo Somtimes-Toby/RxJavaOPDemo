@@ -1,4 +1,4 @@
-# RxJavaOPDemo
+# 关于 RxJavaOPDemo
   RxJava 的所有常用操作符详解+使用Demo
 
   这一阵子，也是告一小段落了。
@@ -25,8 +25,23 @@
     
   害羞(✿◡‿◡)~
   
+# 关于 RxJava 系列学习心得
+  1、  RxJava 初探
+  http://blog.csdn.net/pmqiujun/article/details/53183555
   
-# 另外，这些是Rx支持的利用库
+  2、  RxJava 进击的Rx
+  http://blog.csdn.net/PMQIUJUn/article/details/53184505
+  
+  3、  读 给 Android 开发者的 RxJava 详解 笔记
+  http://blog.csdn.net/PMQIUJUn/article/details/53184115
+  
+  4、  RxJava 常用操作符大全（一）
+  http://blog.csdn.net/PMQIUJUn/article/details/53184801
+  
+  5、  RxJava 常用操作符大全（二）
+  http://blog.csdn.net/PMQIUJUn/article/details/53185028
+  
+# 关于 是Rx支持的利用库
    
   https://github.com/ReactiveX/RxJava ——RxJava核心库
 
